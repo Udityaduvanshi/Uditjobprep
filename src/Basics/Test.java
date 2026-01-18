@@ -31,6 +31,31 @@ public class Test {
         }
 
 
+        
+         // salary slip
+
+         double salary = 12000;
+         double HRA, DA, GrossSalary;
+
+         if (salary <= 10000) {
+             HRA = salary * 0.10;
+             DA = salary * 0.90;
+         } else {
+             HRA = salary * 0.20;
+             DA = salary * 0.95;
+         }
+
+         double totalGross = (salary + HRA + DA);
+
+
+         System.out.println("Salary : " + salary);
+         System.out.println("HRA : " + HRA);
+         System.out.println("DA : " + DA);
+         System.out.println("Total GrossSalary : " + totalGross);
+
+
+
+
 
     }
 }
