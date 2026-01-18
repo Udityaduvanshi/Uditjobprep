@@ -6,7 +6,7 @@ public class Test {
 
 
          // atm
-
+/*
         int correctpin = 4621;
         double balance = 12000;
         // input
@@ -28,13 +28,13 @@ public class Test {
         }
         if  (pinnumber != correctpin) {
             System.out.println("Invalid Pin");
-        }
+        }*/
 
 
-        
+
          // salary slip
 
-         double salary = 12000;
+        /* double salary = 12000;
          double HRA, DA, GrossSalary;
 
          if (salary <= 10000) {
@@ -51,7 +51,33 @@ public class Test {
          System.out.println("Salary : " + salary);
          System.out.println("HRA : " + HRA);
          System.out.println("DA : " + DA);
-         System.out.println("Total GrossSalary : " + totalGross);
+         System.out.println("Total GrossSalary : " + totalGross);*/
+
+
+
+
+         // Department Bonus
+
+        int salary = 100000;
+        String department = "tranie";
+        double bonus;
+
+        if (department.equalsIgnoreCase("HR")) {
+            bonus = salary * 0.10;
+        } else if (department.equalsIgnoreCase("IT")) {
+            bonus = salary * 0.20;
+        }else if (department.equalsIgnoreCase("SALES")) {
+            bonus = salary * 0.25;
+        } else {
+             bonus = salary * 0.05;
+        }
+
+        double totalGross = (salary + bonus);
+
+        System.out.println("Department : " + department);
+        System.out.println("Salary : " + salary);
+        System.out.println("Bonus : " + bonus);
+        System.out.println("Total Gross : " + totalGross);
 
 
 
