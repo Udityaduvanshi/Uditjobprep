@@ -11,7 +11,7 @@ public class Test {
         double balance = 12000;
         // input
         int pinnumber = 4621;
-        double withdrawal =1200.64 ;
+        double withdrawal =1300;
 
         if (pinnumber == correctpin && withdrawal > 0) {
             if (withdrawal <= balance) {
