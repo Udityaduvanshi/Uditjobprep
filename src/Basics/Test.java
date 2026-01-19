@@ -8,7 +8,7 @@ public class Test {
 
         // positive or negative
 
-        int n = 1;
+      /*  int n = 1;
         if (n >= 0){
             System.out.println("POSITIVE NUMBER");
         } else  {
@@ -99,8 +99,129 @@ public class Test {
             System.out.println("LEAP YEAR");
         } else{
             System.out.println("IS not a leap year");
+        }*/
+
+
+        // if medium
+
+        // find the largest or three
+
+        int a = 100;
+        int b = 31;
+        int c = 20;
+
+        if ((a > b) && (a > c)){
+            System.out.println("Largest Number is A : " + a);
+        } else if ((b > a) && (b > c)){
+            System.out.println("Largest Number is B : " + b);
+        } else {
+            System.out.println("Largest Number is C : " + c);
         }
 
+      // positive negative and zero
+
+        int d = -1;
+
+        if (d > 0){
+            System.out.println(" POSITIVE NUMBER");
+        } else if (d < 0) {
+            System.out.println("NEGATIVE NUMBER");
+        } else {
+            System.out.println("ZERO");
+        }
+
+        //3 grades
+
+        int marks = 20;
+        if(marks >= 90) {
+            System.out.println("GRADE A");
+        } else if (marks >= 75) {
+            System.out.println("GRADE B");
+        } else if (marks >= 50) {
+            System.out.println("GRADE C");
+        } else {
+            System.out.println("FAIL");
+        }
+
+        //4 uppercase lower digit  special
+
+        char ch = '@';
+
+        if (ch >= 'A' && ch <= 'Z' ) {
+            System.out.println("UpperCase");
+        } else if (ch >='a' && ch <='z') {
+            System.out.println("LowerCase");
+        } else if (ch >= 0 && ch <= 9) {
+            System.out.println("Digit");
+        } else {
+            System.out.println("Special Character");
+        }
+
+        // 5 triangle valid using its three angles
+
+          int t = 60;
+          int r = 60;
+          int n = 60;
+
+          if ((t+r+n == 180)) {
+              System.out.println(" The triangle is valid ");
+          } else {
+              System.out.println("The triangle is not valid");
+          }
+
+
+        //7 simple calculator
+
+        int i = 30;
+        int j = 2;
+        char operator = '*';
+
+
+        if (operator == '/' ) {
+             double v = (i / j);
+            System.out.println( (i + " / " + j )+ " : " + v );
+        } else if (operator == '*') {
+              int v = i*j ;
+            System.out.println( (i + " * " + j )+ " : " + v);
+        } else if (operator == '+') {
+             int  v = i+j;
+            System.out.println( (i + " + " + j )+ " : " + v);
+        } else if (operator == '-') {
+            int v = i-j;
+            System.out.println( (i + " - " + j )+ " : " + v);
+        }
+
+        // divisible by both 3and 5
+
+        int no = 16;
+         if (no % 3 == 0 && no % 5 == 0) {
+             System.out.println( no + " is divisible by 3 and 5");
+         } else {
+             System.out.println( no + " is not divisible by 3 and 5");
+         }
+
+         //9 eligible for a job
+
+        int age = 20;
+         String degree ="yes";
+
+         if ((age >= 21 ) && degree.equalsIgnoreCase("yes") ) {
+             System.out.println("Is Eligible for Job");
+         }else {
+             System.out.println("Is not Eligible for Job");
+         }
+
+         // three side from valid triangle
+
+         int l = 3;
+         int m = 0;
+         int o = 6;
+
+         if (l + m > o && l + o > m && m + o > l ){
+             System.out.println("Valid triangle");
+         } else {
+             System.out.println("Is not a triangle");
+         }
 
 
 
