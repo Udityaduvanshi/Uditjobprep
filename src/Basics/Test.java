@@ -105,7 +105,7 @@ public class Test {
         // if medium
 
         // find the largest or three
-
+/*
         int a = 100;
         int b = 31;
         int c = 20;
@@ -221,8 +221,180 @@ public class Test {
              System.out.println("Valid triangle");
          } else {
              System.out.println("Is not a triangle");
-         }
+         }*/
 
+        // if else hard
+
+        int a = 5;
+        int b = 5;
+        int c = 5;
+
+        if (a == b && a == c) {
+            System.out.println("Equilaterals Triangle");
+        } else if (a == b || a == c || b == c) {
+            System.out.println("Isosceles Triangle");
+        } else {
+            System.out.println("Scalene");
+        }
+
+        //4 electricity
+        int unit = 201;
+        double bill = 0;
+
+        if (unit <= 100) {
+            System.out.println("Bill free on 100 unit ");
+        } else if (unit > 100) {
+            bill = 5 * unit;
+        } else if (unit > 200) {
+            bill = unit * 10;
+        }
+        System.out.println("Unit Consume : " + unit);
+        System.out.println("Electricity bill : " + bill);
+
+
+
+        // income tax
+
+        int slabs = 600000;
+        double tax = 0;
+
+        if (slabs <= 250000) {
+            tax = 0;
+        } else if (slabs <= 500000) {
+            tax = (slabs - 250000) * 0.05;
+        } else if (slabs <= 1000000) {
+            tax = (slabs - 500000) * 0.10 + 250000 * 0.05;
+        }
+
+        System.out.println(" Income : " + slabs);
+        System.out.println(" Tax : " + tax);
+
+        // menu driven
+
+        int i = 50;
+        int j = 10;
+        int option = 1;
+
+        System.out.println("----Menu----");
+        System.out.println("1. Add");
+        System.out.println("2. Subtract");
+        System.out.println("3. Multiply");
+        System.out.println("4. Divide");
+
+        if (option == 1) {
+            int v = i + j;
+            System.out.println((i + " + " + j) + " : " + v);
+        } else if (option == 2) {
+            int v = i - j;
+            System.out.println((i + " - " + j) + " : " + v);
+        } else if (option == 3) {
+            int v = i * j;
+            System.out.println((i + " * " + j) + " : " + v);
+        } else if (option == 4) {
+            double v = (i / j);
+            System.out.println((i + " / " + j) + " : " + v);
+        } else {
+            System.out.println("Exit");
+        }
+
+        // date
+        int date = 30;
+        int month = 2;
+        int year = 2020;
+
+
+        if (month < 1 || month > 12) {
+            System.out.println("invalid month");
+        } else if (month == 2){
+            if ( date < 1 || date > 29 ) {
+                System.out.println("invalid date");
+            } else {
+                System.out.println("valid date");
+            }
+
+        }else if (month == 4 || month == 6 || month == 9 || month == 11) {
+            if (date >= 1 && date <= 30) {
+                System.out.println("Valid date");
+            } else {
+                System.out.println("invalid date ");
+            }
+        } else {
+            if (date >= 1 && date <= 31) {
+                System.out.println("Valid date");
+            } else {
+                System.out.println("invalid date ");
+            }
+        }
+
+        //
+        int salary = 10000;
+        int age = 50;
+        int credit = 500;
+
+        if (age >= 21 || age <= 65) {
+            if (salary >= 25000) {
+                if (credit >= 500) {
+                    System.out.println("LOAN approved");
+                } else {
+                    System.out.println("Low Credit score");
+                }
+            } else {
+                System.out.println("Low Salary");
+            }
+        } else {
+            System.out.println("AGE Is Low");
+        }
+
+        // quadrant
+
+        int x = 5;
+        int y = 5;
+
+        if (x > 0 && y > 0) {
+            System.out.println(x + "," + y + " Is Quadrant |");
+        } else if (x < 0 && y > 0) {
+            System.out.println(x + "," + y + " Is Quadrant ||");
+        } else if (x < 0 && y < 0) {
+            System.out.println(x + "," + y + " Is Quadrant |||");
+        } else if (x > 0 && y < 0) {
+            System.out.println(x + "," + y + " Is Quadrant |V");
+        } else if (x == 0 && y != 0) {
+            System.out.println(x + "," + y + " Y axis");
+        } else if (y == 0 && x != 0) {
+            System.out.println(x + "," + y + " x axis");
+        } else {
+            System.out.println(x + "," + y + " origin");
+        }
+
+        // palindrome
+
+        int num = 1331;
+        int temp = num;
+        int res = 0;
+        while (num > 0) {
+            res = res * 10 + num % 10;
+            num = num / 10;
+        }
+        if (res == temp) {
+            System.out.println("palindrome");
+        } else {
+            System.out.println("is not palindrome");
+        }
+        //armstrong
+
+        int numb = 153;
+        int original = numb;
+        int sum = 0;
+        while (numb > 0) {
+            int remai = num % 10;
+            sum = sum + (remai * remai * remai);
+            numb = num / 10;
+        }
+        if (sum == original) {
+            System.out.println("armstrong number");
+        } else {
+            System.out.println(" is not armstrong");
+        }
 
 
 
